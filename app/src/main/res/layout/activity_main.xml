@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.admin.accordiondemo.activity.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Nature -->
+
+            <RelativeLayout
+                android:id="@+id/nature_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@android:color/black"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    android:id="@+id/nature_text_view_1"
+                    android:text="Nature"
+                    style="@style/HeadingsTextViewStyle1"
+                    />
+
+                <TextView
+                    android:id="@+id/nature_text_view_2"
+                    style="@style/HeadingsTextViewStyle2"
+                    />
+
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/nature_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="gone"
+                />
+
+            <!-- Flowers -->
+
+            <RelativeLayout
+                android:id="@+id/flowers_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@android:color/black"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    android:id="@+id/flowers_text_view_1"
+                    android:text="Flowers"
+                    style="@style/HeadingsTextViewStyle1"
+                    />
+
+                <TextView
+                    android:id="@+id/flowers_text_view_2"
+                    style="@style/HeadingsTextViewStyle2"
+                    />
+
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/flowers_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="gone"
+                />
+
+            <!-- Babies -->
+
+            <RelativeLayout
+                android:id="@+id/babies_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@android:color/black"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    android:id="@+id/babies_text_view_1"
+                    android:text="Babies"
+                    style="@style/HeadingsTextViewStyle1"
+                    />
+
+                <TextView
+                    android:id="@+id/babies_text_view_2"
+                    style="@style/HeadingsTextViewStyle2"
+                    />
+
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/babies_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="gone"
+                />
+
+            <!-- Roads -->
+
+            <RelativeLayout
+                android:id="@+id/roads_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@android:color/black"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    android:id="@+id/roads_text_view_1"
+                    android:text="Roads"
+                    style="@style/HeadingsTextViewStyle1"
+                    />
+
+                <TextView
+                    android:id="@+id/roads_text_view_2"
+                    style="@style/HeadingsTextViewStyle2"
+                    />
+
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/roads_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
